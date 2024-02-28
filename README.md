@@ -1,6 +1,6 @@
 
 
-# Tutorial for selecting markers gene for image-based spatial transcriptomic experiment
+# Tutorial for selecting markes genes for image-based spatial transcriptomic experiments
 This repository provides a series of Python notebooks designed to assist users in selecting marker
 genes for image-based spatial transcriptomic experiments. Due to experimental constraints,
 only a limited number of genes can be used in these experiments. Therefore, 
