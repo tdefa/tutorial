@@ -8,7 +8,7 @@ it's crucial to select a small, yet effective subset of genes that can
 answer biological questions such as cell type mapping and neighborhood in the tissue.  
 
 Marker genes must be discriminative and robust enough to identify the cell type of interest.
-In the absence of cytoplasm staining,  the RNA-cell assignment is complexe.  
+In the absence of cytoplasm staining,  the RNA-cell assignment is complex.  
 Errors in RNA-cell assignment can occur due to irregular cell shapes or RNA expression,
 potentially leading to inaccuracies in cell type identification.  
 
@@ -20,21 +20,21 @@ steps and adapt the code to their specific data. the workflow is illustrated in 
 
 The notebooks are written in Python and are divided in the following sections:
 
-1- Marker gene selection: The notebook guide the user in the selection of markers gene from scRNA-seq data.  
-2- Marker gene validation: The notebook guide the user in the validation of the selected markers gene using scRNA-seq data.  
-3- Tissue simulation: The notebook guide the user in the simulation of the tissue using the selected markers gene. these simulation will be used to validate the selected markers gene 
-while taking into account experimental smFISH constrains.  
-4-RNA-cell assignement: The notebook guide the user in the assignement
+1- Marker gene selection: The notebook guides the user in the selection of marker genes from scRNA-seq data.  
+2- Marker gene validation: The notebook guides the user in the validation of the selected marker gene using scRNA-seq data.  
+3- Tissue simulation: The notebook guides the user in the simulation of the tissue using the selected markers gene. these simulations will be used to validate the selected markers gene 
+while taking into account experimental smFISH constraints.  
+4-RNA-cell assignment: The notebook guides the user in the assignment
 of the RNA to the cells in the simulated tissue.  
-5-Assess in-situ cell type calling in smFISH simulation. The notebook guide the user in the assessment of the cell type calling in the simulated tissue, 
-using the previously simulated tissue and assigned RNA to the cells. 
+5-Assess in-situ cell type calling in smFISH simulation. The notebook guides the user in the assessment of the cell type calling in the simulated tissue, 
+using the previously simulated tissue and assigning RNA to the cells. 
 
 The primary objective of using tissue simulation is to validate
 the chosen marker genes, considering the constraints of smFISH experiments.
 This process takes into account potential RNA-cell assignment errors, which can arise from
 irregular cell shapes or RNA expression, particularly when cytoplasm staining is not feasible.
 
-Depending of the final estimated cell type accuracy obtain, the user can choose to adjust its markers gene list.
+Depending on the final estimated cell type accuracy obtained, the user can choose to adjust its markers gene list.
 
 ![Alt text](fig/preparing_experiment4.png?raw=true "Title")
 
@@ -43,5 +43,5 @@ Depending of the final estimated cell type accuracy obtain, the user can choose 
  Simulation framework provides cell volumes and nuclei. 
  RNA-to-cell assignment can then be compared quantitatively to the 
  known ground truth with metrics such as Jaccard index  
- B - Marker selection method can be compared in term of in-situ cell type accuracy and RNA-cell assignement error (Jacard index))  
- C - RNA-cell assignement method can also be compared in term of in-situ cell type accuracy and RNA-cell assignement error (Jacard index))
+ B - The marker selection method can be compared in terms of in-situ cell type accuracy and RNA-cell assignment error (Jacard index))  
+ C - RNA-cell assignment method can also be compared in terms of in-situ cell type accuracy and RNA-cell assignment error (Jacard index))
